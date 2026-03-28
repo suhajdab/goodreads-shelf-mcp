@@ -1,6 +1,6 @@
 {
   "name": "goodreads-shelf-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for fetching and searching Goodreads shelf data via RSS",
   "type": "module",
   "main": "dist/index.js",
@@ -12,13 +12,13 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.1",
-    "fast-xml-parser": "^5.2.3",
-    "zod": "^3.24.4"
+    "@modelcontextprotocol/sdk": "^1.28.0",
+    "fast-xml-parser": "^5.5.9",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@types/node": "^22.15.3",
-    "typescript": "^5.8.3",
-    "vitest": "^2.0.0"
+    "@types/node": "^22.19.15",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.0"
   }
 }
