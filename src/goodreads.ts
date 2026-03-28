@@ -24,7 +24,7 @@ const parser = new XMLParser({
   trimValues: true,
 });
 
-function stripHtml(html: string): string {
+export function stripHtml(html: string): string {
   if (!html) return "";
   return html
     .replace(/<br\s*\/?>/gi, "\n")
@@ -38,7 +38,7 @@ function stripHtml(html: string): string {
     .trim();
 }
 
-function parseItem(item: Record<string, unknown>): Book {
+export function parseItem(item: Record<string, unknown>): Book {
   const str = (val: unknown): string => {
     if (val === null || val === undefined) return "";
     return String(val).trim();
